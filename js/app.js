@@ -233,16 +233,18 @@ function renderStats(list) {
   document.getElementById('statsBar').querySelectorAll('[data-scroll]').forEach(card => {
     card.addEventListener('click', () => {
       const target = card.dataset.scroll;
+      const scroller = document.querySelector('.app-main') || window;
       if (target === 'top') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scroller.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
       const section = document.querySelector(`.pillar-section[data-pillar="${target}"]`);
       if (!section) return;
       const controls = document.querySelector('.controls');
       const offset = (controls ? controls.offsetHeight : 0) + 20;
-      const top = section.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      const scrollTop = scroller instanceof Window ? window.scrollY : scroller.scrollTop;
+      const top = section.getBoundingClientRect().top + scrollTop - offset;
+      scroller.scrollTo({ top, behavior: 'smooth' });
     });
   });
 }
