@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luteach · Dashboard ESG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== B2B SIDEBAR ===== -->
+<aside class="b2b-sidebar">
+
+  <!-- Logo -->
+  <div class="b2b-sidebar-header">
+    <div class="b2b-brand">
+      <div class="b2b-brand-icon">
+        <img src="assets/logo-orange-black.png" alt="L" onerror="this.style.display='none';this.parentElement.textContent='L'">
+      </div>
+      <div class="b2b-brand-text">
+        <span class="b2b-brand-name">LUTEACH</span>
+        <span class="b2b-brand-tag">B2B</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client selector -->
+  <div class="b2b-client">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span class="b2b-client-name">BCP — Demo</span>
+    <svg class="b2b-client-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="b2b-nav">
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Inicio</span>
+    </a>
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>Estudiantes</span>
+    </a>
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span>Notas</span>
+    </a>
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Planes</span>
+    </a>
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      <span>Reportes</span>
+    </a>
+    <a href="#" class="b2b-nav-item b2b-nav-item--active">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>Sostenibilidad</span>
+    </a>
+    <a href="#" class="b2b-nav-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Configuración</span>
+    </a>
+  </nav>
+
+  <!-- User -->
+  <div class="b2b-user">
+    <div class="b2b-user-avatar">J</div>
+    <div class="b2b-user-info">
+      <span class="b2b-user-name">Javier Barreda</span>
+    </div>
+  </div>
+
+</aside>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="app-main">
+
+<!-- ===== TOPBAR ===== -->
+<header class="topbar">
+  <!-- Row 1: title + actions -->
+  <div class="topbar-main">
+    <div class="topbar-brand">
+      <div class="topbar-brand-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="titleblock">
+        <h1>Dashboard <span class="accent">ESG</span></h1>
+        <p>BCP &mdash; Demo &nbsp;&middot;&nbsp; GRI Standards &nbsp;&middot;&nbsp; ODS &nbsp;&middot;&nbsp; Modelo LBG</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <div class="live-indicator" id="liveIndicator">
+        <span class="live-pulse"></span>
+        <span class="live-text">En vivo</span>
+        <span class="live-timer" id="liveTimer">ahora</span>
+      </div>
+      <button id="btnExport" class="btn btn-action">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Exportar
+      </button>
+      <button id="btnPrint" class="btn btn-action">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Imprimir
+      </button>
+      <button id="btnReset" class="btn btn-action btn-action-outline">Limpiar</button>
+    </div>
+  </div>
+  <!-- Row 2: view tabs -->
+  <div class="topbar-tabs" id="viewToggle">
+    <button class="vbtn active" data-view="cards">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Tarjetas
+    </button>
+    <button class="vbtn" data-view="charts">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      Gráficos
+    </button>
+    <button class="vbtn" data-view="table">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      Tabla
+    </button>
+  </div>
+</header>
+
+<!-- ===== PERIOD BAR ===== -->
+<section class="period-bar">
+  <div class="period-bar-inner">
+    <div class="period-icon-label">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Período de reporte</span>
+    </div>
+    <div class="period-selects">
+      <select id="fromMonth" class="period-select"></select>
+      <select id="fromYear" class="period-select"></select>
+      <span class="period-arrow">→</span>
+      <select id="toMonth" class="period-select"></select>
+      <select id="toYear" class="period-select"></select>
+    </div>
+    <label class="period-toggle-wrap">
+      <input type="checkbox" id="periodFilterToggle">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-lbl">Filtrar por período</span>
+    </label>
+    <div class="period-badge" id="periodBadge" hidden></div>
+  </div>
+</section>
+
+<!-- ===== KPI STATS ===== -->
+<section class="stats-bar" id="statsBar"></section>
+
+<!-- ===== FILTERS ===== -->
+<section class="controls">
+  <div class="controls-row">
+    <div class="search-wrap">
+      <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="searchInput" type="text" placeholder="Buscar métrica, GRI, ODS, categoría…" autocomplete="off">
+    </div>
+    <div class="filter-block">
+      <label>Pilar</label>
+      <div class="chip-group" id="pillarChips"></div>
+    </div>
+    <div class="filter-block">
+      <label>LBG</label>
+      <div class="chip-group" id="lbgChips"></div>
+    </div>
+  </div>
+  <div class="controls-row">
+    <div class="filter-block">
+      <label>Categoría</label>
+      <select id="categoryFilter"><option value="">Todas</option></select>
+    </div>
+    <div class="filter-block">
+      <label>ODS</label>
+      <div class="chip-group chip-group--ods" id="odsChips"></div>
+    </div>
+    <div class="filter-block">
+      <label>Alineación GRI</label>
+      <div class="chip-group" id="alignChips"></div>
+    </div>
+  </div>
+  <div class="controls-row controls-row--count">
+    <span id="resultCount"></span>
+  </div>
+</section>
+
+<!-- ===== CARD VIEW ===== -->
+<div id="cardsView">
+  <div id="cardsContainer"></div>
+  <div id="crossMetricsSection" class="cross-metrics-section"></div>
+</div>
+
+<!-- ===== CHARTS VIEW (hidden by default) ===== -->
+<div id="chartsView" hidden>
+  <div class="charts-grid">
+
+    <!-- Full width: Horas de tutoría -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3>Distribución de horas de tutoría</h3>
+            <p>S-03 · S-04 · S-05 — Utilización del programa en el período</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body chart-card-body--short">
+        <canvas id="chartHoras"></canvas>
+      </div>
+    </div>
+
+    <!-- Academic results -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <h3>Resultados académicos</h3>
+            <p>S-09 · S-12 · S-13 · S-18 — Impacto educativo</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartAcademico"></canvas>
+      </div>
+    </div>
+
+    <!-- Satisfaction -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--gov">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3>Satisfacción por grupo</h3>
+            <p>S-16 · S-17 · S-30 — Escala 1–5</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartSatisfaccion"></canvas>
+      </div>
+    </div>
+
+    <!-- Student reach -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h3>Alcance de estudiantes</h3>
+            <p>S-00 · S-01 — Registrados vs. activos</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartAlcance"></canvas>
+      </div>
+    </div>
+
+    <!-- Gender diversity -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--gov">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M12 12v8"/><path d="M8 16h8"/></svg>
+          </div>
+          <div>
+            <h3>Diversidad de Luteachers</h3>
+            <p>S-23 — Composición por género</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartDiversidad"></canvas>
+      </div>
+    </div>
+
+    <!-- Full width: Carbon breakdown -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--env">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Huella de carbono mensual</h3>
+            <p>E-01 — Electricidad de dispositivos + plataforma + transporte</p>
+          </div>
+        </div>
+        <span class="chart-source-badge">CO₂ estimado</span>
+      </div>
+      <div class="chart-card-body chart-card-body--short">
+        <canvas id="chartCarbon"></canvas>
+      </div>
+    </div>
+
+    <!-- ── SECCIÓN: GÉNERO Y DIVERSIDAD ─────────────────── -->
+    <div class="chart-section-header">
+      <span class="chart-section-label">Género y diversidad</span>
+    </div>
+
+    <!-- Gender parity: students vs Luteachers -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--gov">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M12 12v8"/><path d="M8 16h8"/></svg>
+          </div>
+          <div>
+            <h3>Paridad de género</h3>
+            <p>S-21 · S-23 — Estudiantes y Luteachers por género</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartGenero"></canvas>
+      </div>
+    </div>
+
+    <!-- Social inclusion -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--env">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="21" x2="23" y2="19"/><line x1="19" y1="19" x2="19" y2="21"/><path d="M21 12a4 4 0 0 0-4-4"/></svg>
+          </div>
+          <div>
+            <h3>Inclusión e impacto social</h3>
+            <p>S-08 · S-24 · S-32 — Cobertura, vulnerabilidad y becas</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartInclusion"></canvas>
+      </div>
+    </div>
+
+    <!-- ── SECCIÓN: LUTEACHERS Y GOBERNANZA ─────────────── -->
+    <div class="chart-section-header">
+      <span class="chart-section-label">Luteachers y gobernanza</span>
+    </div>
+
+    <!-- Luteacher impact -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <h3>Impacto en Luteachers</h3>
+            <p>S-27 · S-28 · S-30 — Habilidades, empleo y calidad</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartLuteachersImpacto"></canvas>
+      </div>
+    </div>
+
+    <!-- Governance compliance -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--gov">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div>
+            <h3>Cumplimiento de gobernanza</h3>
+            <p>G-01 · G-02 · G-03 — Protección, conducta y datos</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartGobernanza"></canvas>
+      </div>
+    </div>
+
+    <!-- ── SECCIÓN: IMPACTO ECONÓMICO ──────────────────── -->
+    <div class="chart-section-header">
+      <span class="chart-section-label">Impacto económico y modelo LBG</span>
+    </div>
+
+    <!-- Productivity recovery - full width -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <h3>Productividad parental recuperada</h3>
+            <p>S-03 · S-04 · S-34 · S-35 — Modelo 2:1 de horas y valor económico</p>
+          </div>
+        </div>
+        <span class="chart-source-badge">Ratio 2:1</span>
+      </div>
+      <div class="chart-card-body chart-card-body--short">
+        <canvas id="chartProductividad"></canvas>
+      </div>
+    </div>
+
+    <!-- LBG model funnel - full width -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--gov">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <div>
+            <h3>Modelo LBG — De input a impacto</h3>
+            <p>Input · Output · Outcome · Impact — Cadena de valor del programa</p>
+          </div>
+        </div>
+        <span class="chart-source-badge">LBG</span>
+      </div>
+      <div class="chart-card-body">
+        <canvas id="chartLBG"></canvas>
+      </div>
+    </div>
+
+    <!-- ── SECCIÓN: TENDENCIAS ─────────────────────────── -->
+    <div class="chart-section-header">
+      <span class="chart-section-label">Tendencias y cobertura ODS</span>
+    </div>
+
+    <!-- Monthly trend - full width -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--social">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h3>Evolución mensual del programa</h3>
+            <p>S-01 · S-04 · S-16 — Últimos 12 meses (simulado)</p>
+          </div>
+        </div>
+        <span class="chart-source-badge">Proyección</span>
+      </div>
+      <div class="chart-card-body" style="height:200px">
+        <canvas id="chartTendencia"></canvas>
+      </div>
+    </div>
+
+    <!-- ODS Radar - full width -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-title">
+          <div class="chart-card-icon chart-card-icon--env">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h3>Cobertura por ODS</h3>
+            <p>ODS 4 · 5 · 8 · 10 · 13 + Gobernanza — Radar de alineación estratégica</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart-card-body" style="height:300px">
+        <canvas id="chartRadar"></canvas>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== TABLE VIEW (hidden by default) ===== -->
+<div id="tableView" hidden>
+  <section class="table-wrap">
+    <table id="metricsTable">
+      <thead>
+        <tr>
+          <th class="col-id">ID</th>
+          <th class="col-pillar">Pilar</th>
+          <th class="col-category">Categoría</th>
+          <th class="col-metric">Métrica</th>
+          <th class="col-val">Valor</th>
+          <th class="col-ods">ODS</th>
+          <th class="col-gri">GRI</th>
+          <th class="col-lbg">LBG</th>
+          <th class="col-freq">Frecuencia</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <p id="emptyState" class="empty-state" hidden>Ninguna métrica coincide con los filtros seleccionados.</p>
+  </section>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footnote">
+  <div class="footnote-inner">
+    <div class="footnote-logo">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <strong>Luteach ESG</strong>
+    </div>
+    <p><strong>Metodología:</strong> Pilares ESG (Ambiental · Social · Gobernanza), alineados a los <strong>ODS</strong> (principalmente 4, 5, 8, 10 y 13), <strong>GRI Standards</strong> y modelo <strong>LBG</strong> (Input · Output · Outcome · Impact). Valores ilustrativos — reemplazar con datos reales.</p>
+  </div>
+</footer>
+
+</div><!-- /.app-main -->
+
+<!-- ===== DETAIL PANEL ===== -->
+<div id="overlay" class="overlay" hidden></div>
+<aside id="detailPanel" class="detail-panel" hidden>
+  <button id="closeDetail" class="detail-close">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div id="detailContent"></div>
+</aside>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
