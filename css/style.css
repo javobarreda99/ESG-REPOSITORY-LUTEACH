@@ -335,6 +335,44 @@ body {
 .stat-ambiental.stat-nav:hover  { background: var(--forest-50); }
 
 /* ═══════════════════════════════════════
+   LBG MODEL EXPLAINER
+═══════════════════════════════════════ */
+.lbg-explainer { padding: 4px 28px 18px; }
+.lbg-explainer-head { margin-bottom: 12px; }
+.lbg-explainer-head h2 {
+  font-size: 14px; font-weight: 800; color: var(--dark); margin: 0 0 3px;
+  letter-spacing: -0.2px;
+}
+.lbg-explainer-head p {
+  font-size: 12px; color: var(--gray-500); margin: 0; max-width: 760px; line-height: 1.5;
+}
+.lbg-explainer-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.lbg-explain-card {
+  background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--r-md);
+  border-top: 3px solid transparent; padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.lbg-explain-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+.lbg-explain-top { display: flex; align-items: center; justify-content: space-between; }
+.lbg-explain-icon { display: inline-flex; color: var(--gray-400); }
+.lbg-explain-card h3 { font-size: 12.5px; font-weight: 700; color: var(--dark); margin: 0; }
+.lbg-explain-card > p { font-size: 11.5px; color: var(--gray-500); margin: 0; line-height: 1.45; }
+.lbg-explain-example {
+  font-size: 10.5px; color: var(--gray-400); font-style: italic; margin-top: 2px;
+}
+.lbg-explain-input   { border-top-color: var(--gray-300); }
+.lbg-explain-output  { border-top-color: var(--blue-500); }
+.lbg-explain-outcome { border-top-color: var(--orange-400); }
+.lbg-explain-impact  { border-top-color: var(--orange-600); }
+.lbg-explain-input   .lbg-explain-icon { color: var(--gray-400); }
+.lbg-explain-output  .lbg-explain-icon { color: var(--blue-500); }
+.lbg-explain-outcome .lbg-explain-icon { color: var(--orange-400); }
+.lbg-explain-impact  .lbg-explain-icon { color: var(--orange-600); }
+
+/* ═══════════════════════════════════════
    CONTROLS
 ═══════════════════════════════════════ */
 .controls {
@@ -1059,6 +1097,7 @@ tbody td { padding: 9px 12px; font-size: 12px; vertical-align: middle; color: va
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
   .metric-card--calc { grid-column: 1 / -1; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .lbg-explainer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 /* Hide sidebar on small screens */
 @media (max-width: 768px) {
@@ -1069,6 +1108,7 @@ tbody td { padding: 9px 12px; font-size: 12px; vertical-align: middle; color: va
   .topbar { padding: 14px 16px 0; }
   .period-bar { padding: 9px 16px; }
   .stats-bar { padding: 10px 16px; gap: 8px; }
+  .lbg-explainer { padding: 4px 16px 14px; }
   .controls { margin: 0 16px 12px; }
   #cardsContainer { padding: 0 16px 12px; }
   .cross-metrics-section { padding: 0 16px 20px; }
@@ -1085,6 +1125,7 @@ tbody td { padding: 9px 12px; font-size: 12px; vertical-align: middle; color: va
   .calc-formula-row { flex-direction: column; gap: 10px; }
   .calc-op { transform: rotate(90deg); }
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .lbg-explainer-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 420px) {
   .cards-grid { grid-template-columns: 1fr; }
